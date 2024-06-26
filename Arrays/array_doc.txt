@@ -178,4 +178,19 @@ Which is the direct superclass of an array in Java?
 
 An Object is direct superclass of an array in Java.
 
+---------------------------------------------------------/.....................................................................
 
+
+Time Complexity
+----------------
+Time complexity is a way to describe the amount of time an algorithm takes to run as a function of the size of its input. It gives an upper bound on the running time of an algorithm, helping us understand the worst-case scenario.
+
+Common Time Complexities
+-------------------------
+1. O(1) - Constant Time: The running time does not depend on the size of the input. Example: Accessing an element in an 
+          array by index.
+2. O(n) - Linear Time: The running time grows linearly with the input size. Example: Iterating through all elements of an array.
+3. O(n^2) - Quadratic Time: The running time grows quadratically with the input size. Example: Nested loops over an array.
+4. O(log n) - Logarithmic Time: The running time grows logarithmically with the input size. Example: Binary search in 
+               sorted array.
+5. O(n log n) - Linearithmic Time: The running time grows linearly with an additional logarithmic factor. Example: Merge sort and quicksort.
