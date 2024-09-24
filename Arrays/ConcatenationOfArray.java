@@ -26,7 +26,7 @@ class Concatenate{
 
 public class ConcatenationOfArray{
     public static void main(String[] args){
-        int[] arr = new int[] {1,2,3,5};
+        int[] arr = new int[] {1,2,3,5,7};
         int[] res = Concatenate.getConcatenation(arr);
         System.out.print("[");
         for(int i = 0; i < res.length; i++){
