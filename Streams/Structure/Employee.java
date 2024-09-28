@@ -1,21 +1,26 @@
-package Streams.Filter;
+package Streams.Structure;
 
 public class Employee {
-    private String name;
-    private int age;
+    private int empId;
+    private String empName;
 
-    public Employee(String name, int age) {
-        this.name = name;
-        this.age = age;
+    public Employee() {}
+
+    public Employee(int empId, String empName) {
+        this.empId = empId;
+        this.empName = empName;
     }
 
-    public int getAge() {
-        return age;
+    public int getEmpId() {
+        return empId;
+    }
+
+    public String getEmpName() {
+        return empName;
     }
 
     @Override
     public String toString() {
-        return name + ": " + age;
+        return "EmployeeDTO [empId=" + empId + ", empName=" + empName + "]";
     }
-    
 }
