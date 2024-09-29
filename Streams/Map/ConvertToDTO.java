@@ -2,6 +2,8 @@ package Streams.Map;
 
 import java.util.*;
 
+import Streams.Structure.Employee;
+
 public class ConvertToDTO {
     public static void main(String[] args) {
        List<Employee> list = Arrays.asList(
