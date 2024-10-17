@@ -1,6 +1,5 @@
 package Arrays;
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -60,4 +59,5 @@ Object[]  array = { 1, 2, new Object[]{ 3, 4, new Object[]{ 5 }, 6, 7 }, 8, 9, 1
                         return Stream.of(element);
                     }
                 });
+}
 }

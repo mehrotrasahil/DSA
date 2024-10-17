@@ -4,9 +4,8 @@
 
 package Arrays;
 
-import java.util.*;
 
-class Reverse{
+/* class Reverse{
     public static List<Integer> reverseArr(List<Integer> arr){
         List<Integer> result = new ArrayList<>();
 
@@ -31,28 +30,41 @@ public class ReverseArray{
             System.out.println(num);
         }
     }
-}
+} */
 
 
-/* class Reverse {
-    public static int[] reverseArr(int[] arr) {
-        int[] result = new int[arr.length]; // Use arr.length instead of fixed size 5
-        int temp = 0;
-        for(int i = arr.length - 1; i >= 0; i--) {
-            result[temp] = arr[i];
-            temp++;
+class Reverse {
+    public static void reverseArr(int[] arr) {
+        int left = 0;
+        int right = arr.length - 1;
+
+        while(left < right){
+
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left++;
+
+            right--;
         }
-        return result;
+
+
+        // int temp = 0;
+        // for(int i = arr.length - 1; i >= 0; i--) {
+        //     result[temp] = arr[i];
+        //     temp++;
+        // }
     }
 }
 
 public class ReverseArray { 
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40, 50};
-        int[] result = Reverse.reverseArr(arr);
+        Reverse.reverseArr(arr);
 
-        for(int num : result) {
+        for(int num : arr) {
             System.out.println(num);
         }
     }
-} */
+} 
