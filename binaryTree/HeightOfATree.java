@@ -41,7 +41,6 @@ public class HeightOfATree {
         node.left.left = new Node(5);
         node.left.right = new Node(15);
         node.left.right.left = new Node(13);
-        node.left.right.left.right = new Node(10);
         node.right.left = new Node(30);
         node.right.right = new Node(42);
 

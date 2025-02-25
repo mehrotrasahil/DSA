@@ -4,67 +4,56 @@
 
 package Arrays;
 
-
-/* class Reverse{
-    public static List<Integer> reverseArr(List<Integer> arr){
-        List<Integer> result = new ArrayList<>();
-
-        for(int i = arr.size() - 1; i >= 0; i--){
-            result.add(arr.get(i));
-        }
-        return result;
-    }
-}
-
-public class ReverseArray{
-    public static void main(String[] args) {
-        List<Integer> arr = new ArrayList<>();
-        arr.add(10);
-        arr.add(20);
-        arr.add(30);
-        arr.add(40);
-        arr.add(50);
-
-        List<Integer> res = Reverse.reverseArr(arr);
-        for(int num : res) {
-            System.out.println(num);
-        }
-    }
-} */
-
-
-class Reverse {
-    public static void reverseArr(int[] arr) {
-        int left = 0;
-        int right = arr.length - 1;
-
-        while(left < right){
-
-            int temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
-
-            left++;
-
-            right--;
-        }
-
-
-        // int temp = 0;
-        // for(int i = arr.length - 1; i >= 0; i--) {
-        //     result[temp] = arr[i];
-        //     temp++;
-        // }
-    }
-}
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.stream.Collectors;
 
 public class ReverseArray { 
     public static void main(String[] args) {
         int[] arr = {10, 20, 30, 40, 50};
-        Reverse.reverseArr(arr);
+        int[] result = new int[arr.length];
 
-        for(int num : arr) {
-            System.out.println(num);
+        //Liner approach
+        for(int i = arr.length -1; i >= 0; i--){
+            result[(arr.length -1) - i] = arr[i];
         }
+
+        for(int res : result){
+            System.out.println(res);
+        }
+
+        // Tow pointer methods
+        int left = 0, right = arr.length - 1;
+
+        while (left < right) {
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
+
+            left ++;
+            right --;
+        }
+       
+        for(int res : arr){
+            System.out.print(res + " ");           
+        }
+
+
+        System.out.println();
+        //Using Collections
+
+        int[] arr2 = {10, 20, 30, 40, 50};
+
+
+        ArrayList<Integer> arrayList = Arrays.stream(arr2).boxed().collect(Collectors.toCollection(ArrayList::new));
+
+        Collections.reverse(arrayList);
+
+        for(Integer res : arrayList){
+            System.out.print(res + " ");
+        }
+
+
     }
 } 
