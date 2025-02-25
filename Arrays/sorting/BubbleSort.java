@@ -11,6 +11,8 @@
  * 
  * 
  * In simple terms Bubble sort checks two adjacent elements at a time and swap if they are not in right order.
+ * 
+ * In this we will solve the problem using iterative as well as the recursive approach
  */
 
  import java.util.*;
@@ -25,6 +27,49 @@
         System.out.println(Arrays.toString(arr));
 
     }
+/**
+ * Iterative approach for Bubble Sort.
+ * 
+ * This method sorts an array of integers using the Bubble Sort algorithm.
+ * Bubble Sort repeatedly steps through the list, compares adjacent elements, 
+ * and swaps them if they are in the wrong order. The pass through the list 
+ * is repeated until the list is sorted.
+ * 
+ * Algorithm:
+ * - The outer loop runs from the last index (n-1) to the first index (1).
+ * - The inner loop iterates from the start of the array to (i-1), 
+ *   comparing adjacent elements.
+ * - If the current element is greater than the next element, they are swapped.
+ * - After each pass, the largest element bubbles up to its correct position.
+ * - The process is repeated until the entire array is sorted.
+ * 
+ * Example:
+ * Input: [5, 3, 8, 4, 2]
+ * 
+ * Iteration 1:
+ * [3, 5, 8, 4, 2] -> (5 > 3, swap)
+ * [3, 5, 8, 4, 2] -> (5 < 8, no swap)
+ * [3, 5, 4, 8, 2] -> (8 > 4, swap)
+ * [3, 5, 4, 2, 8] -> (8 > 2, swap) -> Largest element (8) placed at the end
+ * 
+ * Iteration 2:
+ * [3, 5, 4, 2, 8] -> (3 < 5, no swap)
+ * [3, 4, 5, 2, 8] -> (5 > 4, swap)
+ * [3, 4, 2, 5, 8] -> (5 > 2, swap) -> Second largest element (5) placed
+ * 
+ * Iteration 3:
+ * [3, 4, 2, 5, 8] -> (3 < 4, no swap)
+ * [3, 2, 4, 5, 8] -> (4 > 2, swap) -> Third largest element (4) placed
+ * 
+ * Iteration 4:
+ * [2, 3, 4, 5, 8] -> (3 > 2, swap) -> The array is now sorted
+ * 
+ * Time Complexity:
+ * - Worst and Average Case: O(n^2) (when the array is in reverse order)
+ * - Best Case: O(n) (when the array is already sorted)
+ * 
+ * Space Complexity: O(1) (sorting is done in place)
+ */
 
     private static void sort(int[] arr, int n){
 
