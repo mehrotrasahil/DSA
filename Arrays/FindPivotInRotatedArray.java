@@ -1,3 +1,5 @@
+package Arrays;
+
 /* *
  *Search in Rotated Sorted Array
 Medium
