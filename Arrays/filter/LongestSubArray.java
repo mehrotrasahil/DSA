@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 public class LongestSubArray {
     public static void main(String[] atgs){
-        List<Integer> nums = Arrays.asList(4, 2, -3, 1, 6);
+        List<Integer> nums = Arrays.asList(1, 2, -3, 3, -1, -2, 4);
         
         List<Integer> ans = getUpdatedList(nums);
         System.out.println(ans);

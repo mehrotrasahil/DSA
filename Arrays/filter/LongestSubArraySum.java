@@ -11,8 +11,8 @@ import java.util.List;
  */
 public class LongestSubArraySum {
     public static void main (String[] args){
-        List<Integer> nums = Arrays.asList(2, 3, -8, 7, -1, 2, 3);
-        int sum = getTheMaxSumOptimized(nums);
+        List<Integer> nums = Arrays.asList(1,3, 4,-1);
+        int sum = getTheMaxSum(nums);
 
         System.out.println("Max Sub Array Sum is: " + sum);
     }
