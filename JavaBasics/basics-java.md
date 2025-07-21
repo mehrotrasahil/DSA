@@ -8,7 +8,7 @@
 2. Conditional Statements (`if-else`, `switch`)
 3. Loops (`for`, `while`, `do-while`)
 4. Writing Functions (Methods) in Java
-5. Practice Problems
+5. java Strings
 
 ---
 
@@ -116,6 +116,68 @@ public class Main {
     }
 }
 ```
+
+## 5️⃣ Java Strings and compareTo() Method
+
+## ✅ What is a String?
+## https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#split-java.lang.String-
+--
+A String is a sequence of characters. It is one of the most used classes in Java.
+
+🔧 Declaring Strings
+
+String s1 = "Hello";
+String s2 = new String("World");
+
+🔧 Common String Methods
+
+| Method         | Description                                              | Example                             |
+|----------------|----------------------------------------------------------|-------------------------------------|
+| `length()`     | Returns the length of the string                         | `"hello".length() → 5`              |
+| `charAt(i)`    | Returns char at index `i`                                | `"hello".charAt(1) → 'e'`           |
+| `substring(i)` | Returns substring from index `i`                         | `"hello".substring(2) → "llo"`      |
+| `substring(i,j)` | Returns substring from `i` to `j-1`                    | `"hello".substring(1,4) → "ell"`    |
+| `compareTo()`  | Lexicographically compares two strings                   | `"abc".compareTo("abd") → -1`       |
+| `equals()`     | Checks content equality                                  | `"abc".equals("abc") → true`        |
+| `toLowerCase()`| Converts to lowercase                                    | `"ABC".toLowerCase() → "abc"`       |
+| `toUpperCase()`| Converts to uppercase                                    | `"abc".toUpperCase() → "ABC"`       |
+| `contains()`   | Checks if string contains a given sequence               | `"hello".contains("ell") → true`    |
+
+--
+
+## 🧠 compareTo() Explanation
+
+The `compareTo()` method compares two strings lexicographically (dictionary order).
+--
+"abc".compareTo("abd")  // Output: -1 because 'c' < 'd'
+"abc".compareTo("abc")  // Output: 0
+"abe".compareTo("abc")  // Output: +1 because 'e' > 'c'
+--
+Returns:
+
+0 if both strings are equal.
+
+< 0 if first string is lexicographically smaller.
+
+> 0 if first string is lexicographically larger.
+--
+
+## 🧱 StringBuilder vs StringBuffer
+✅ When to Use:
+
+Use StringBuilder when you are working in a single-threaded application and want high performance.
+
+Use StringBuffer when multiple threads are modifying the same string object.
+
+## Example
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb); // Output: Hello World
+
+StringBuffer sbf = new StringBuffer("Java");
+sbf.append(" Programming");
+System.out.println(sbf); // Output: Java Programming
+--
 
 ### ✅ Points to Remember
 
