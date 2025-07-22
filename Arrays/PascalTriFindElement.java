@@ -1,3 +1,4 @@
+package Arrays;
 /* *
  * Find the element in the pascal triangle 
  * Pascal Triangle - 

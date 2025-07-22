@@ -21,7 +21,6 @@ import java.util.*;
         int[] arr = new int[]{5,43,13,65,1,6,0};
         int len = arr.length;
         for(int i = 0; i < len; i++){
-            int key = arr[i];
             int j = i;
             while(j > 0 && arr[j-1] > arr[j]){
                System.out.println("inside while");
