@@ -1,4 +1,4 @@
-package basics;
+package basics.mathBasic;
 /* 
     Reverse a number
 

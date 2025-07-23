@@ -1,4 +1,4 @@
-package basics;
+package basics.mathBasic;
 
 /* 
 Problem Statement: Given an integer N, return true it is an Armstrong number otherwise return false.

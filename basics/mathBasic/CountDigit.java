@@ -1,4 +1,4 @@
-package basics;
+package basics.mathBasic;
 
 /* 
 Count all Digits of a Number
