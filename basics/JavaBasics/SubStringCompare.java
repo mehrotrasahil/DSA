@@ -1,4 +1,4 @@
-package JavaBasics;
+package basics.JavaBasics;
 
 /* 
 Given a string, s, and an integer, k, complete the function so that it finds the lexicographically smallest and largest 
