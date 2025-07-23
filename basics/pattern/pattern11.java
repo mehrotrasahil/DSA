@@ -1,4 +1,4 @@
-package pattern;
+package basics.pattern;
 
 /* 
 input - n = 5

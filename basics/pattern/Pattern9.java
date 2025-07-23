@@ -1,4 +1,4 @@
-package pattern;
+package basics.pattern;
 /*
 intput = 5  
 output - 

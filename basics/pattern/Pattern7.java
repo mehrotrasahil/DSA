@@ -1,4 +1,4 @@
-package pattern;
+package basics.pattern;
 
 /* *
      * Input - 3
