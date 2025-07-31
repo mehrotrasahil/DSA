@@ -35,17 +35,18 @@ Output:
 1
  */
 
- public class PrintNumbers{
+public class PrintNumbers {
     public static void main(String[] args) {
         int n = 5;
 
         printNumInLoop(1, n);
     }
 
-    private static void printNumInLoop(int i, int n){
-        if(i > n) return;
+    private static void printNumInLoop(int i, int n) {
+        if (i > n)
+            return;
 
         System.out.println(i);
-        printNumInLoop(i+1, n);
+        printNumInLoop(i + 1, n);
     }
- }
+}
