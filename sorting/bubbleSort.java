@@ -62,7 +62,7 @@ public class bubbleSort {
 
         for (int i = n - 1; i >= 1; i--) {
             /*
-             * Second loop will go from o to i - 1.
+             * Second loop will go from 0 to i - 1.
              * n -1 is because we do not want the last element to get compared with the net
              * element which is not even present
              */
