@@ -57,13 +57,13 @@ public class bubbleSort {
 
         /*
          * First loop will go from n-1 to ith index.
-         * As the last element wwill already be sorted after each iteration.
+         * As the last element will already be sorted after each iteration.
          */
 
         for (int i = n - 1; i >= 1; i--) {
             /*
              * Second loop will go from 0 to i - 1.
-             * n -1 is because we do not want the last element to get compared with the net
+             * i -1 is because we do not want the last element to get compared with the net
              * element which is not even present
              */
             for (int j = 0; j <= i - 1; j++) {
