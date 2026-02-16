@@ -1,0 +1,20 @@
+package Streams.Questions;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class ReverseList {
+
+    public static void main(String[] args) {
+        List<Integer> list = Arrays.asList(1, 2, 3, 4, 3, 1, 2);
+
+        List<Integer> output = list.stream()
+                .distinct()
+                .sorted(Comparator.reverseOrder())
+                .collect(Collectors.toList());
+
+        System.out.println(output);
+    }
+}
