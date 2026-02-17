@@ -51,7 +51,7 @@ public class EmployeeSort {
             Map<Employee, Integer> empMap = new HashMap<>();
             empMap.put(new Employee("sahil@gmail.com", "Sahil Mehrotra", "IT"), 14);
             empMap.put(new Employee("Manoj@gmail.com", "Manoj Kumar", "DevOps"), 15);
-            empMap.put(new Employee("pritam@gmail.com", "Pritam Pyarre", "IT"), 10);
+            empMap.put(new Employee("pritam@gmail.com", "Pritam Pyarre", "IT"), 22);
             empMap.put(new Employee("Chaitanya@gmail.com", "Chaitanua Anand", "QA"), 20);
 
             Map<Employee, Integer> sortedMap = empMap.entrySet()

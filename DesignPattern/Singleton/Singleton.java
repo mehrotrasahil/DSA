@@ -1,17 +1,18 @@
 package DesignPattern.Singleton;
 
 public class Singleton {
+    private static volatile Singleton instance;
 
-    // Step 1: private static instance of same class
-    private static Singleton instance;
+    private Singleton() {
+    }
 
-    // Step 2: private constructor
-    private Singleton() {}
-
-    // Step 3: public static method to return the instance
     public static Singleton getInstance() {
         if (instance == null) {
-            instance = new Singleton(); // lazy initialization
+            synchronized (Singleton.class) {
+                if (instance == null) {
+                    instance = new Singleton();
+                }
+            }
         }
         return instance;
     }
